@@ -4,4 +4,4 @@ Experimenting with
 * github
 * github actions
 * github pages
-* github workspaces
+* github vscode editor
