@@ -1,6 +1,6 @@
 Experimenting with
 * mkdocs
-* poetry
+* uv
 * github
 * github actions
 * github pages
