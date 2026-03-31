@@ -11,15 +11,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       # Install uv
       - name: Install uv
-        uses: astral-sh/setup-uv@v1
+        uses: astral-sh/setup-uv@v7
+        with:
+          # Install a specific version of uv.
+          version: "0.11.2"
 
       # Set up Python via uv (no setup-python needed)
       - name: Set up Python
-        run: uv python install 3.14
+        run: uv python install
 
       # Sync dependencies from pyproject
       - name: Install dependencies
